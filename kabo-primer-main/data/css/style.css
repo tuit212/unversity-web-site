@@ -34,7 +34,7 @@ p {
   line-height: 150%;
 }
 
-.work_navi a, .projects_img::before, .projects_img img, .projects_img, .team_items img, .social_icons li, .footer_links a, .news_image img, .services_block_in a h4, .services_block_in a::before, .services_block_in a, .active-btn::before, .active-btn, .mobile_menu, .showOverlay, .navigation .lang_link span, .navigation .lang_dropdown button, .navigation_dropdown li a, .navigation_dropdown, .navigation_items::before, .navigation {
+.one-section .login__btn::before, .work_navi a, .projects_img::before, .projects_img img, .projects_img, .team_items img, .social_icons li, .footer_links a, .news_image img, .services_block_in a h4, .services_block_in a::before, .services_block_in a, .active-btn::before, .active-btn, .mobile_menu, .showOverlay, .navigation .lang_link span, .navigation .lang_dropdown button, .navigation_dropdown li a, .navigation_dropdown li, .navigation_dropdown, .navigation_items::before, .navigation {
   transition: all 0.3s linear;
 }
 
@@ -96,25 +96,28 @@ p {
 }
 .navigation_dropdown ul {
   background: #1c1c1c;
-  padding: 25px;
+  padding: 25px 5px;
 }
 .navigation_dropdown li {
-  margin-bottom: 20px;
   font-size: 0.9em;
+  padding: 10px 0 10px 5px;
+  border-radius: 5px;
+}
+.navigation_dropdown li:hover {
+  background-color: #3e3e3e;
 }
 .navigation_dropdown li:last-child {
   margin-bottom: 0;
 }
 .navigation_dropdown li a {
   color: #999;
+  padding: 5px 0;
 }
 .navigation_dropdown li a:hover {
   color: #fff;
 }
 .navigation .lang_dropdown {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 40px;
 }
 .navigation .lang_dropdown button {
   border: none;
@@ -350,7 +353,6 @@ p {
   line-height: 50px;
   letter-spacing: 0.8px;
   border: 1px solid #278ce1;
-  background: #278ce1;
   border-radius: 0;
   box-shadow: none;
   cursor: pointer;
@@ -1238,7 +1240,7 @@ p {
 }
 
 .footer {
-  background: url(../img/advantage-bg.png) no-repeat center #1c1c1c;
+  background: url(../img/advantage-bg.png) no-repeat center rgb(0, 26, 42);
   position: relative;
   flex-wrap: wrap;
   width: 100%;
@@ -2034,6 +2036,235 @@ p {
   transform: scale(1.1);
 }
 
+.one-section {
+  align-items: center;
+  background: url(../img/advantage-bg.png) no-repeat center rgb(0, 26, 42);
+  padding: 80px 0;
+  background-size: cover;
+}
+.one-section .login {
+  margin: 0 auto;
+  width: 40%;
+  padding: 40px 70px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-color: rgb(26, 41, 70);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.one-section .login__car {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+.one-section .login__car__user {
+  font-size: 34px;
+  padding: 10px 0;
+  color: rgb(2, 98, 31);
+  transition: 0.3s;
+}
+.one-section .login__car__user:hover {
+  color: rgb(5, 206, 65);
+}
+.one-section .login__car__text {
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.one-section .login__label {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ccc;
+}
+.one-section .login__user {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+  font-size: 19px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.one-section .login__user:hover {
+  border-bottom: 2px solid rgb(204, 204, 204);
+  background-color: rgba(204, 204, 204, 0.034);
+}
+.one-section .login__password {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+  font-size: 19px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.one-section .login__password:hover {
+  border-bottom: 2px solid rgb(204, 204, 204);
+  background-color: rgba(204, 204, 204, 0.034);
+}
+.one-section .login__confim {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+  font-size: 19px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.one-section .login__confim:hover {
+  background-color: rgba(204, 204, 204, 0.034);
+  border-bottom: 2px solid rgb(204, 204, 204);
+}
+.one-section .login__cardd {
+  padding: 10px 0;
+}
+.one-section .login__btn {
+  padding: 20px 0;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: rgb(2, 98, 31);
+  border-radius: 10pc;
+  font-size: 19px;
+  margin: 30px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.one-section .login__btn::before {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #82CD47;
+  content: "";
+  border-radius: 2pc;
+  color: #fff;
+  mix-blend-mode: color;
+}
+.one-section .login__btn:hover {
+  color: #fff;
+}
+.one-section .login__btn:hover::before, .one-section .login__btn:focus::before {
+  width: 100%;
+}
+.one-section .login__btn:active {
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width: 1200px) {
+  .one-section .login {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .one-section {
+    padding: 40px 0;
+  }
+  .one-section .login {
+    width: 70%;
+    padding: 15px 40px;
+  }
+  .one-section .login__label {
+    font-size: 18px;
+  }
+  .one-section .login__user {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 16px;
+  }
+  .one-section .login__user:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__password {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 16px;
+  }
+  .one-section .login__password:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__confim {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 16px;
+  }
+  .one-section .login__confim:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__btn {
+    display: block;
+    padding: 10px;
+    width: 60%;
+    border-radius: 5pc;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .one-section {
+    padding: 20px 0;
+  }
+  .one-section .login {
+    width: 80%;
+  }
+  .one-section .login__car__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  .one-section .login__label {
+    font-size: 16px;
+  }
+  .one-section .login__user {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 14px;
+  }
+  .one-section .login__user:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__password {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 14px;
+  }
+  .one-section .login__password:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__confim {
+    border: 1px solid rgba(204, 204, 204, 0.504);
+    font-size: 14px;
+  }
+  .one-section .login__confim:hover {
+    border: 1px solid transparent;
+  }
+  .one-section .login__cardd {
+    padding: 8px 0;
+  }
+  .one-section .login__btn {
+    padding: 8px 0;
+    border-radius: 2pc;
+    width: 60%;
+    margin: 15px auto;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .one-section .login {
+    width: 90%;
+    padding: 15px 20px;
+  }
+  .one-section .login__car {
+    padding: 10px 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .navigation {
     padding: 20px 15px;

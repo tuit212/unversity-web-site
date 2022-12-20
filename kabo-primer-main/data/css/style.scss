@@ -104,16 +104,26 @@ p {
         @extend %transition_style;
         ul {
             background: #1c1c1c;
-            padding: 25px;
+            padding: 25px 5px;
         }
         li {
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             font-size: 0.9em;
+            padding: 10px 0 10px 5px;
+            border-radius: 5px;
+            @extend %transition_style;
+
+            &:hover{
+                background-color: #3e3e3e;
+            }
+
             &:last-child {
                 margin-bottom: 0;
             }
             a {
                 color: #999;
+                padding: 5px 0;
+
                 @extend %transition_style;
                 &:hover {
                     color: #fff;
@@ -122,13 +132,16 @@ p {
         }
     }
     .lang_dropdown {
-        width: max-content;
+        // width: max-content;
+        width: 40px;
+
         button{
             border: none;
             outline: none;
             background: none;
             color: #999;
             @extend %transition_style;
+
             &:hover{
                 color: #fff;
             }
@@ -252,6 +265,8 @@ p {
     }
 }
 
+
+
 // Header promo styles
 
 .header_promo {
@@ -367,7 +382,6 @@ p {
     line-height: 50px;
     letter-spacing: 0.8px;
     border: 1px solid $mainColor;
-    background: $mainColor;
     border-radius: 0;
     box-shadow: none;
     cursor: pointer;
@@ -1287,7 +1301,7 @@ p {
 }
 
 .footer {
-    background: url(../img/advantage-bg.png) no-repeat center #1c1c1c;
+    background: url(../img/advantage-bg.png) no-repeat center rgb(0, 26, 42);
     position: relative;
     flex-wrap: wrap;
     width: 100%;
@@ -2166,6 +2180,296 @@ p {
     background: $bgColor;
     a:hover img {
         transform: scale(1.1);
+    }
+}
+
+.one-section {
+    align-items: center;
+    background: url(../img/advantage-bg.png) no-repeat center rgb(0, 26, 42);
+    padding: 80px 0;
+    background-size: cover;
+    
+    .login{
+        margin: 0 auto;
+        width: 40%;
+        padding: 40px 70px; 
+        border-radius: 10px;
+        transition:all 0.3s ease;
+        overflow: hidden;
+        background-color: rgb(26, 41, 70);
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+        &__car{
+            margin: 0 auto;
+            text-align: center;
+            padding: 30px 0;
+
+            &__user{
+                font-size: 34px;
+                padding: 10px 0;
+                color: rgb(2, 98, 31);
+                transition: 0.3s;
+
+                &:hover{
+                    color: rgb(5, 206, 65);
+
+                }
+            }
+
+            &__text{
+                color: #ccc;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 16px;
+            }
+
+        }
+
+        &__label{
+            width: 100%;
+            font-size: 22px;
+            font-weight: 600;
+            color: #ccc;
+        }
+
+        &__user{
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+            font-size: 19px;
+            color: white;
+            transition: all 0.3s ease;
+            &:hover{
+                border-bottom: 2px solid rgb(204, 204, 204);
+                background-color: rgba(204, 204, 204, 0.034);
+
+            }
+        }
+        &__password{
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+            font-size: 19px;
+            color: white;
+            transition: all 0.3s ease;
+            &:hover{
+                border-bottom: 2px solid rgb(204, 204, 204);
+                background-color: rgba(204, 204, 204, 0.034);
+
+            }
+
+        }
+
+        &__confim{
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            border-bottom: 2px solid rgba(204, 204, 204, 0.504);
+            font-size: 19px;
+            color: white;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: rgba(204, 204, 204, 0.034);
+            border-bottom: 2px solid rgb(204, 204, 204);
+
+            }
+        }
+
+        &__cardd{
+            padding: 10px 0;
+        }
+
+        &__btn{
+            padding: 20px 0;
+            width: 100%;
+            border: none;
+            color: #fff;
+            background-color: rgb(2, 98, 31);
+            border-radius: 10pc;
+            font-size: 19px;
+            margin: 30px 0;
+            
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                width: 0;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: #82CD47;
+                content: "";
+                @extend %transition_style;
+                border-radius: 2pc;
+                color: #fff;
+                mix-blend-mode: color;
+            }
+
+            &:hover{
+                color: #fff;
+            }
+
+            &:hover::before , &:focus::before {
+                width: 100%;
+            }
+
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .one-section{
+
+        .login{
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .one-section {
+        padding: 40px 0;
+
+        .login{
+            width: 70%;
+            padding: 15px 40px;
+
+            &__label{
+                font-size: 18px;
+            }
+
+            &__user{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 16px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+
+            }
+
+            &__password{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 16px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+            }
+
+            &__confim{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 16px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+            }
+
+            &__btn{
+                display: block;
+                padding: 10px;
+                width: 60%;
+                border-radius: 5pc;
+                margin: 30px auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .one-section{
+        padding: 20px 0;
+
+        .login{
+            width: 80%;
+
+            &__car{
+
+                &__text{
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
+
+            &__label{
+                font-size: 16px;
+            }
+
+            &__user{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 14px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+
+            }
+
+            &__password{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 14px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+            }
+
+            &__confim{
+                border: 1px solid rgba(204, 204, 204, 0.504);
+                font-size: 14px;
+
+                &:hover{
+                    border: 1px solid transparent;
+                }
+            }
+
+            &__cardd{
+                padding: 8px 0;
+            }
+
+            &__btn{
+                padding: 8px 0;
+                border-radius: 2pc;
+                width: 60%;
+                margin: 15px auto;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:420px){
+    .one-section{
+        
+        .login{
+            width: 90%;
+            padding: 15px 20px;
+
+            &__car{
+                padding: 10px 0;
+            }
+
+        }
     }
 }
 
