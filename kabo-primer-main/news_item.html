@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,20 +21,13 @@
     <link rel="stylesheet" href="data/css/swiper.min.css">
     <link rel="stylesheet" href="data/css/style.css">
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="data/js/viewportchecker.js"></script>
-    <script type="text/javascript" src="data/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="data/js/index.js"></script>
-
 </head>
 
 <body>
     <div class="wrapper">
+
         <nav class="navigation">
-            <a href="" class="navigation_logo"><img src="data/img/logo-full.png" alt=""></a>
+            <a href="index.html" class="navigation_logo"><img src="data/img/logo-full.png" alt="logo"></a>
             <button class="menu_btn">
                 <span></span>
                 <span></span>
@@ -41,94 +35,125 @@
             </button>
             <ul class="navigation_list">
                 <li class="navigation_items">
-                    <span class="navigation_link">
-                        О компании
-                    </span>
+                    <a href="about.html" class="navigation_link">
+                        Universitet haqida
+                    </a>
                     <div class="navigation_dropdown">
                         <ul>
                             <li>
-                                <a href="about.html">О нас</a>
+                                <a href="kafedra.html">Kafedra</a>
                             </li>
                             <li>
-                                <a href="">Партнеры</a>
+                                <a href="markaz.html" >Markaz va bo'limlar</a>
                             </li>
                             <li>
-                                <a href="">Карьера</a>
-                            </li>
-                            <li>
-                                <a href="">Загрузки</a>
+                                <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="navigation_items">
-                    <a href="" class="navigation_link">
-                        Проекты
+                    <a href="news.html" class="navigation_link" target="_blank">
+                        Yangiliklar
                     </a>
                 </li>
                 <li class="navigation_items">
-                    <a href="" class="navigation_link">
-                        Портфолио
+                    <a href="vedio.html" class="navigation_link">
+                        vedio
                     </a>
                 </li>
                 <li class="navigation_items">
-                    <a href="" class="navigation_link">
-                        Новости
-                    </a>
+                    <a href="contacts.html" class="navigation_link">Bog'lanish</a>
                 </li>
                 <li class="navigation_items">
-                    <a href="" class="navigation_link">Контакты</a>
+                    <a href="talim.html" class="navigation_link">Ta'lim</a>
+                </li>
+                <li class="navigation_items">
+                    <a href="login.html" class="navigation_link">Login</a>
                 </li>
                 <li class="navigation_items">
                     <span href="" class="navigation_link lang_link">
-                        Ru <span>&#9660;</span>
+                        UZ <span>&#9660;</span>
                     </span>
                     <div class="navigation_dropdown lang_dropdown">
                         <ul>
                             <li>
-                                <a href="">RU</a>
+                                <a href="">UZ</a>
                             </li>
                             <li>
                                 <a href="">EN</a>
                             </li>
                             <li>
-                                <a href="">UZ</a>
+                                <a href="">RU</a>
                             </li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </nav>
+
         <!-- responsive mobile menu -->
         <div class="mobile_menu">
             <ul class="link_list">
                 <li>
-                    <a href="#demo" data-toggle="collapse">О компании</a>
-                    <div id="demo" class="collapse">
-                        <div class="collapse_list">
-                            <a href="about.html">О нас</a>
-                            <a href="">Партнеры</a>
-                            <a href="">Карьера</a>
-                            <a href="">Загрузки</a>
-                        </div>
-                    </div>
+                    <a href="#demo" data-toggle="collapse">Universitet haqida</a>
                 </li>
-                <li><a href="">Проекты</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Контакты</a></li>
+                <li>
+                    <a href="kafedra.html">Kafedra</a>
+                </li>
+                <li>
+                    <a href="markaz.html">Markaz va bo'limlar</a>
+                </li>
+                <li>
+                    <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
+                </li>
+                <li>
+                    <a href="news.html" target="_blank">
+                        Yangiliklar
+                    </a>
+                </li>
+                <li>
+                    <a href="vedio.html" class="navigation_link">
+                        vedio
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html" class="navigation_link">Bog'lanish</a>
+                </li>
+                <li>
+                    <a href="talim.html" class="navigation_link">Ta'lim</a>
+                </li>
+                <li>
+                    <a href="login.html" class="navigation__link">Login</a>
+                </li>
             </ul>
-            <p>Выбор языка:</p>
+            <p>Til tanlash:</p>
             <ul class="lang_list">
-                <li><a href="">Uz</a></li>
-                <li><a href="" class="active">Ru</a></li>
-                <li><a href="">En</a></li>
+                <li><a href="#link" class="active">Uz</a></li>
+                <li><a href="#link" >Ru</a></li>
+                <li><a href="#link">En</a></li>
             </ul>
             <ul class="social_icons">
-                <li><a href=""><img src="data/img/facebook-w.svg" alt=""></a></li>
-                <li><a href=""><img src="data/img/telegram-w.svg" alt=""></a></li>
-                <li><a href=""><img src="data/img/instagram-w.svg" alt=""></a></li>
-                <li><a href=""><img src="data/img/whatsapp-w.svg" alt=""></a></li>
+                <li>
+                    <a href="https://www.facebook.com/nizomiy.tdpu/" target="_blank">
+                        <img src="data/img/facebook-w.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/Nizomiy1" target="_blank">
+                        <img src="data/img/telegram-w.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nizomiy.tdpu/" target="_blank">
+                        <img src="data/img/instagram-w.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/nizomiy.tdpu/" target="_blank">
+                        <img src="data/img/whatsapp-w.svg" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -140,51 +165,23 @@
                     src="data/promo/promo_header.mp4"></video>
             </div>
             <div class="header_promo_title">
-                <h1><span>MAKON MARKETING FORUM 2021</span></h1>
+                <h1><span class="disciribtion">Yangiliklar</span></h1>
                 <ul class="header_promo_breadcrumbs">
                     <li>
-                        <a href="">Главная</a><i>/</i>
+                        <a href="index.html">Bosh sahifa</a><i>/</i>
                     </li>
                     <li>
-                        <a href="">НОВОСТИ</a><i>/</i>
+                        <a href="kafedra.html">yangiliklar</a>
                     </li>
                     <li>
-                        <span>
-                            MAKON MARKETING FORUM 2021
-                        </span>
+                        <span class="disciribtionSpan"> <br> </span>
                     </li>
                 </ul>
             </div>
         </header>
 
-        <!-- news section -->
-        <section class="news">
-            <div class="container">
-                <div class="section_content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="news_individual">
-                                <img src="data/img/about.jpg" alt="">
-                                <p class="news_date"> <span>Kabo Primer </span>/ 22 МАЙ, 2021 </p>
-                                <h2 class="news_title">MAKON Marketing Forum 2021 прошел в Ташкенте</h2>
-                                <p>
-                                    22 мая в Ташкенте состоялся крупнейший в Центральной Азии профессиональный форум,
-                                    объединяющий предпринимателей и ведущих экспертов в области маркетинга – MAKON
-                                    Marketing Forum 2021. Генеральным партнёром III Международного маркетингового
-                                    бизнес-форума выступила компания AKFA Group.
-                                </p>
-                                <p>
-                                    Участие в мероприятии приняли отечественные предприниматели, маркетологи,
-                                    топ-менеджеры крупных компаний. Эксперты из России, Украины и Грузии дали
-                                    бизнесменам советы, направленные на проведение эффективных маркетинговых стратегий и
-                                    развитие бизнес-проектов.
-                                </p>
-                                <a href="about.html" class="active-btn mt-3"><span>Вернуться к списку новостей</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section style="margin: 50px; text-align: center;">
+            <span class="error" style="text-transform: uppercase;">bu yer hali ishga <br> tushmadi sozlanmoqda</span> 
         </section>
 
         <div class="footer">
@@ -194,16 +191,17 @@
                         <div class="col-md-3">
                             <div class="footer_items">
                                 <div class="footer_title">
-                                    О компании
+                                    Universitet haqida
                                 </div>
                                 <div class="footer_content">
-                                    <p>За годы существования компания AKFA зарекомендовала себя как надежного и
-                                        ответственного производителя.</p>
+                                    <p>
+                                        TDPU - Nizomiy nomidagi Toshkent davlat pedagogika universiteti.
+                                    </p>
                                     <ul class="social_icons">
-                                        <li><a href=""><img src="data/img/facebook-w.svg" alt=""></a></li>
-                                        <li><a href=""><img src="data/img/telegram-w.svg" alt=""></a></li>
-                                        <li><a href=""><img src="data/img/instagram-w.svg" alt=""></a></li>
-                                        <li><a href=""><img src="data/img/whatsapp-w.svg" alt=""></a></li>
+                                        <li><a href="https://www.facebook.com/nizomiy.tdpu/" target="_blank"><img src="data/img/facebook-w.svg" alt=""></a></li>
+                                        <li><a href="https://t.me/Nizomiy1" target="_blank"><img src="data/img/telegram-w.svg" alt=""></a></li>
+                                        <li><a href="https://www.instagram.com/nizomiy.tdpu/" target="_blank"><img src="data/img/instagram-w.svg" alt=""></a></li>
+                                        <li><a href="https://www.whatsapp.com/nizomiy.tdpu/" target="_blank"><img src="data/img/whatsapp-w.svg" alt=""></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -212,14 +210,24 @@
                             <div class="footer_items">
                                 <div class="footer_items">
                                     <div class="footer_title">
-                                        Услуги
+                                        Ma'lumotlar
                                     </div>
                                 </div>
                                 <div class="footer_content">
                                     <ul class="footer_links">
-                                        <li><a href="">Мойка окон и фасадов</a></li>
-                                        <li><a href="">Герметизация швов</a></li>
-                                        <li><a href="">Фасадные работы</a></li>
+                                        <li>
+                                            <a href="" >
+                                                Bog'lanish
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" >Vakansiya</a>
+                                        </li>
+                                        <li>
+                                            <a href="news.html" target="_blank">
+                                                Yangiliklar
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -228,15 +236,25 @@
                             <div class="footer_items">
                                 <div class="footer_items">
                                     <div class="footer_title">
-                                        Полезные ссылки
+                                        Foydali ma'lumotlar
                                     </div>
                                 </div>
                                 <div class="footer_content">
                                     <ul class="footer_links">
-                                        <li><a href="">О компании</a></li>
-                                        <li><a href="">Наши работы</a></li>
-                                        <li><a href="">Новости</a></li>
-                                        <li><a href="">Вакансии</a></li>
+                                        <li>
+                                            <a href="about.html" >
+                                                Universitet haqida
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="markaz.html" >Markaz va bo'limlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="kafedra.html">Kafedra</a>
+                                        </li>
+                                        <li>
+                                            <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -250,9 +268,13 @@
                                 </div>
                                 <ul class="footer_contacts">
                                     <li><a href="">г. Ташкент, ул. Катта-Хирмонтепа, 1</a></li>
-                                    <li><a href="">info@akfagroup.com</a></li>
-                                    <li><a href="">+998 71 203 00 00</a></li>
-                                    <li><a href="">Пн. - Сб.: 9:00 до 19:00</a></li>
+                                    <li><span>info@tdpu.uz</span></li>
+                                    <li>
+                                        <a href="tel:+998712024421">+998 71 202 44 21</a>
+                                    </li>
+                                    <li>
+                                        <span>Du. - Shan.: 9:00 до 19:00</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -261,6 +283,16 @@
             </div>
         </div>
     </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="data/js/viewportchecker.js"></script>
+    <script type="text/javascript" src="data/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="data/js/index.js"></script>
+    <script src="data/js/yangiliklar/yangiliklarArr.js"></script>
+    <script src="data/js/yangiliklar/yangiliklar_iem.js"></script>
 </body>
 
 </html>

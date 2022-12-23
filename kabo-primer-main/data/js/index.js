@@ -8,6 +8,7 @@ $(document).ready(function () {
         }
     });
 
+
     /*- animation -*/
     jQuery(".first_animation").addClass("invisible").viewportChecker({
         classToAdd: "visible animated fadeInLeftBig",

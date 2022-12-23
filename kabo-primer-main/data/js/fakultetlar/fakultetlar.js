@@ -1,7 +1,5 @@
 
 
-// let btn = document.querySelector('#btn');
-
 
 let list_fakultetlar = document.querySelector('#list_fakultetlar');
 
@@ -24,7 +22,7 @@ function listFakultetlar(){
                     ${fakultetlarArr[i].text}
                 </p>
             </div>
-                <a href="#link" class="card__itet__links">
+                <a href="./news_item.html" class="card__itet__links">
                     TO'LIQROQ TANISHUV
                 </a>
         </li>

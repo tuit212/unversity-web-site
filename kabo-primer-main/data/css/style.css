@@ -1260,6 +1260,26 @@ p {
   border-bottom: 1px solid #278ce1;
   font-weight: 600;
 }
+.news__list {
+  width: 25%;
+  margin: 50px auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news__list > li > button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  background-color: #000;
+  color: #e1f1ff;
+  border: 1px solid #e1f1ff;
+}
+.news__list > li > button.active-news {
+  border: 1px solid #278ce1;
+  background-color: #fff;
+  color: #278ce1;
+}
 .news_item {
   z-index: 9;
   position: relative;
@@ -2380,6 +2400,153 @@ p {
   color: rgb(62, 55, 55);
 }
 
+.error {
+  font-weight: 700;
+  font-size: 45px;
+  color: #278ce1;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.vedio-section {
+  background: url("../img/advantage-bg.png") #1c1c1c no-repeat center;
+  background-size: cover;
+}
+.vedio-section .vedio {
+  width: 100%;
+}
+
+.talim {
+  background-image: url(data/img/advantage-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.556);
+  padding: 120px 0;
+}
+.talim .talim__card {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.talim .talim__card-left {
+  width: 80%;
+}
+.talim .talim__card-right {
+  width: 18%;
+}
+.talim .bodyHeader {
+  background-color: azure;
+  padding: 10px 0;
+}
+.talim .bodyHeader__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.talim .bodyHeader__item__links {
+  color: rgba(0, 0, 0, 0.522);
+  padding-top: 19px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+.talim .bodyHeader__item__links:hover {
+  color: black;
+}
+.talim .bodyHeader__item__links::before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  bottom: 5px;
+  transition: all 0.4s;
+}
+.talim .bodyHeader__item__links:hover::before {
+  width: 50%;
+}
+.talim .bodyHeader .boglanishActive {
+  padding: 5px 0;
+}
+.talim .bodyHeader .boglanishActive > .bodyHeader__item__links {
+  color: #000;
+}
+.talim .bodyHeader .boglanishActive > .bodyHeader__item__links::before {
+  position: absolute;
+  content: " ";
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  bottom: 5px;
+  transition: all 0.4s;
+}
+.talim .bodyMain {
+  background-color: azure;
+  width: 100%;
+}
+.talim .bodyMain__cardf__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.621);
+  padding: 15px 0;
+}
+.talim .bodyMain__cardf__item {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+}
+.talim .bodyMain__cardf__item__text {
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+.talim .bodyMain__item {
+  display: flex;
+  justify-content: space-between;
+}
+.talim .bodyMain__item__car {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.talim .bodyMain__item__car-img {
+  width: 100%;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 5px rgba(83, 81, 79, 0.389);
+  border-radius: 8px;
+}
+.talim .bodyMain__item__car-img:hover {
+  box-shadow: 0px 4px 5px rgb(83, 81, 79);
+  background-color: black;
+}
+.talim .bodyMain__item__car-span {
+  padding: 10px;
+}
+.talim .bodyMain__item__car-span__title {
+  font-weight: 500;
+}
+.talim .bodyMain__item__car-span__text {
+  color: black;
+  padding: 10px 0;
+}
+.talim .bodyMain__item__card__link1 {
+  display: flex;
+  padding-top: 30px;
+  color: black;
+}
+.talim .bodyMain__item__card__link2 {
+  display: flex;
+  margin-right: 22px;
+  padding: 10px 0;
+  color: black;
+}
+
 @media only screen and (max-width: 590px) {
   .advantage_section .advantage_in {
     flex-wrap: wrap;
@@ -2897,4 +3064,17 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+}
+.vedio-card-section .vedio-card-top {
+  width: 100%;
+}
+.vedio-card-section .vedio-card-top-left {
+  display: flex;
+  align-items: center;
+}
+.vedio-card-section .vedio-card-top-left-img {
+  width: 30%;
+}
+.vedio-card-section .vedio-card-top-left-img > img {
+  width: 320px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,4 @@
 
-// let btn = document.querySelector('#btn');
-
 
 let list_kafedra = document.querySelector('#list_kafedra');
 
@@ -23,7 +21,7 @@ function listKafedra(){
                     ${kafedraArr[i].text}
                 </p>
             </div>
-                <a href="#link" class="card__itet__links">
+                <a href="./kafedra_item.html" class="card__itet__links">
                     TO'LIQROQ TANISHUV
                 </a>
         </li>

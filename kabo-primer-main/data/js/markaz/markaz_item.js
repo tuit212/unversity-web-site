@@ -7,6 +7,7 @@ function markazResult() {
     let markazResultRes = " "
 
     for (let i = 0; i < 4 ; i++) {
+
         markazResultRes += `
             <div class="col-md-6 mt-4 head first_animation invisible">
                 <div class="advantage_in">

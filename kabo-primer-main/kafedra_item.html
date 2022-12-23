@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TDPU - Nizomiy nomidagi Toshkent davlat pedagogika universiteti</title>
+    <title>Kabo Primer</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="data/img/favicon.png" type="image/x-icon">
     <!-- fonts -->
@@ -15,23 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-
-        <!-- v link -->
-        <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-
     <!-- styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="data/css/animate.css" media="all" />
     <link rel="stylesheet" href="data/css/swiper.min.css">
     <link rel="stylesheet" href="data/css/style.css">
 
-    
-
 </head>
 
 <body>
     <div class="wrapper">
-
 
         <nav class="navigation">
             <a href="index.html" class="navigation_logo"><img src="data/img/logo-full.png" alt="logo"></a>
@@ -104,13 +96,6 @@
             <ul class="link_list">
                 <li>
                     <a href="#demo" data-toggle="collapse">Universitet haqida</a>
-                    <!-- <div id="demo" class="collapse">
-                        <div class="collapse_list">
-                            <a href="kafedra.html">Kafedra</a>
-                            <a href="markaz.html">Markaz va bo'limlar</a>
-                            <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
-                        </div>
-                    </div> -->
                 </li>
                 <li>
                     <a href="kafedra.html">Kafedra</a>
@@ -179,57 +164,33 @@
                     src="data/promo/promo_header.mp4"></video>
             </div>
             <div class="header_promo_title">
-                <h1><span>Onlain Vedio</span></h1>
+                <h1><span class="disciribtion">Kafedra</span></h1>
                 <ul class="header_promo_breadcrumbs">
                     <li>
                         <a href="index.html">Bosh sahifa</a><i>/</i>
                     </li>
                     <li>
-                        <span>
-                            Vedio
-                        </span>
+                        <a href="kafedra.html">Kafedra</a>
+                    </li>
+                    <li>
+                        <span class="disciribtionSpan"> <br> </span>
                     </li>
                 </ul>
             </div>
         </header>
 
-        <section class="vedio-section">
+        <!-- news section -->
+        <section class="news">
             <div class="container">
-                <div class="vedio ">
-                    <ul class="vedio__list d-flex align-items-center justify-content-between">
-                        <li class="vedio__item">
-                            <div class="vedio__item-card">
-                                <div class="vedio__item-card-top">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul class="vedio__create-list">
-                        <li class="vedio__create-list-item">
-                            <form>
-                                <div>
-                                    <label for="">Ism</label>
-                                    <input type="text" id="ism" value="" placeholder="Ism kiriting">
-                                </div>
-                                <div>
-                                    <label for="">Dars nomi</label>
-                                    <input type="text" id="dars_nomi" value="" placeholder="Darsni nomi">
-                                </div>
-                                <div>
-                                    <label for="">Video joylang</label>
-                                    <input type="text" id="video_link" value="" placeholder="Video joylang">
-                                </div>
-
-                                <button class="video__card-add">qoshish</button>
-                            </form>
-                        </li>
-                    </ul>
+                <div class="section_content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="news_individual"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        
 
         <div class="footer">
             <div class="footer_inner">
@@ -263,12 +224,12 @@
                                 <div class="footer_content">
                                     <ul class="footer_links">
                                         <li>
-                                            <a href="contacts.html" >
+                                            <a href="" >
                                                 Bog'lanish
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="talim.html" >Ta'lim</a>
+                                            <a href="" >Vakansiya</a>
                                         </li>
                                         <li>
                                             <a href="news.html" target="_blank">
@@ -331,7 +292,6 @@
         </div>
     </div>
 
-
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="data/js/viewportchecker.js"></script>
@@ -339,11 +299,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="data/js/index.js"></script>
-    <script src="data/js/vedio/vedio.js"></script>
-
-
-    <!-- vjs -->
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="./data/js/kafedra/newKafedra.js"></script>
+    <script src="./data/js/kafedra/kafedra_item.js"></script>
 </body>
 
 </html>

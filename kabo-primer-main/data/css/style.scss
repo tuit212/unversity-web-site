@@ -1365,6 +1365,37 @@ p {
         border-bottom: 1px solid $mainColor;
         font-weight: 600;
     }
+
+    &__list{
+        width: 25%;
+        margin: 50px auto !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > li {
+
+            & > button {
+                // width: 40px;
+                border: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                background-color: #000;
+                color: #e1f1ff;
+                border: 1px solid #e1f1ff;
+
+                &.active-news{
+                    border: 1px solid #278ce1;
+                    background-color: #fff;
+                    color: #278ce1;
+                }
+            }
+
+        }
+
+    }
+
+
     &_item {
         z-index: 9;
         position: relative;
@@ -2636,6 +2667,237 @@ p {
     }
 }
 
+.error{
+    font-weight: 700;
+    font-size: 45px;
+    color: #278ce1;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+// vedio styles
+
+.vedio-section{
+    background: url("../img/advantage-bg.png") #1c1c1c 
+    no-repeat center;
+    background-size: cover;
+
+    .vedio{
+        width: 100%;
+
+        // &__list{
+
+            
+        // }
+    }
+}
+
+
+
+
+
+
+
+
+// bog'lanish style
+
+.talim{
+    background-image: url(data/img/advantage-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;;
+    background-color: rgba(0, 0, 0, 0.556);
+    padding: 120px 0;
+
+    
+    .talim__card{
+        display: flex;
+        width: 100%;
+        gap: 30px;
+
+        &-left{
+            width: 80%;
+        }
+
+        &-right{
+            width: 18%;
+        }
+    }
+
+        
+        .bodyHeader{
+            // width: 70%;
+            background-color: azure;
+            padding: 10px 0;
+            &__list{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                // padding: 10px 0;
+    
+            }
+    
+            
+            &__item{
+    
+                &__links{
+                    color: rgba(0, 0, 0, 0.522);
+                    padding-top: 19px;
+                    padding-bottom: 15px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    position: relative;
+    
+                    &:hover{
+                        color: black;
+                        // background-color: rgba(0, 0, 0, 0.344);
+                    }
+
+                    &::before{
+                        position: absolute;
+                        content: ' ';
+                        width: 0;
+                        height: 1px;
+                        background-color: #000;
+                        bottom: 5px;
+                        transition: all 0.4s;
+                    }
+
+                    &:hover::before{
+                        width: 50%;
+                    }
+
+                }
+
+            }
+            .boglanishActive{
+                // background-color: #278ce1;
+                padding: 5px 0;
+            
+            & > .bodyHeader__item__links{
+                    
+                    color: #000;
+
+                    &::before{
+                        position: absolute;
+                        content: ' ';
+                        width: 50%;
+                        height: 1px;
+                        background-color: #000;
+                        bottom: 5px;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+    
+        }
+    
+    
+        .bodyMain{
+            background-color: azure;
+            width: 100%;
+            &__cardf{
+                &__list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: rgba(0, 0, 0, 0.621);
+                   padding: 15px 0;
+                }
+    
+                &__item{
+                    width: 100%;
+                    padding: 10px;
+                    color: white;
+                    font-size: 21px;
+                    text-align: center;
+                    &__text{
+                        text-align:center;
+                        margin: 0 auto;
+                     margin-left: 20px;
+                    }
+    
+    
+               
+                    
+                    
+                }
+              
+    
+    
+            }
+    
+            &__item{
+                display: flex;
+                justify-content: space-between;
+    
+                &__car{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+    
+                
+                    &-img{
+                        width: 100%;
+                        margin: 10px ;
+                        transition: all 0.3s ease;
+                        box-shadow: 0px 4px 5px rgba(83, 81, 79, 0.389);
+                        border-radius: 8px;
+                        &:hover{
+                            box-shadow: 0px 4px 5px rgb(83, 81, 79);
+                            background-color: black;
+                        }
+                    }
+    
+                    &-span{
+                        padding: 10px;
+                        &__title{
+                            font-weight: 500;
+                        }
+                        &__text{
+                            color: black;
+                            padding: 10px 0; 
+                        }
+                    }
+                }
+    
+    
+                &__card{
+                    &__link1{
+                        display: flex;
+                        padding-top: 30px;
+                        color: black;
+    
+                    }
+                    &__link2{
+                        display: flex;
+                        margin-right: 22px;
+                        padding: 10px 0;
+                        color: black;
+    
+                    }
+                }
+             
+            }
+    
+    
+        }
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 590px) {
     .advantage_section{
 
@@ -3289,3 +3551,56 @@ p {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// vedio card
+
+.vedio-card-section{
+
+    .vedio-card{
+
+        &-top{
+            width: 100%;
+
+            &-left{
+                display: flex;
+                align-items: center;
+
+                &-img{
+                    width: 30%;
+
+                    & > img {
+                        width: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
