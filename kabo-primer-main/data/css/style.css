@@ -2416,6 +2416,50 @@ p {
 .vedio-section .vedio {
   width: 100%;
 }
+.vedio-section .vedio__item-card-top {
+  display: flex;
+  align-items: center;
+}
+.vedio-section .vedio .higher__item {
+  width: 31%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.vedio-section .vedio .higher__item:hover {
+  background-color: rgba(0, 0, 0, 0.197);
+  box-shadow: none;
+  position: relative;
+}
+.vedio-section .vedio .higher__item:hover .higher__item__text2 {
+  display: block;
+  transform: scale(1.2);
+}
+.vedio-section .vedio .higher__item:hover .higher__item__img {
+  transform: scale(1.2);
+}
+.vedio-section .vedio .higher__item__img {
+  width: 100%;
+  transition: 0.4s;
+}
+.vedio-section .vedio .higher__item__title {
+  padding: 10px;
+  color: #e1e1e1;
+}
+.vedio-section .vedio .higher__item__text {
+  color: #e1f1ff;
+  padding: 0 10px 10px 10px;
+}
+.vedio-section .vedio .higher__item__text2 {
+  position: absolute;
+  top: 38%;
+  right: 0;
+  color: black;
+  font-weight: 700;
+  padding: 4px 20px;
+  background-color: yellow;
+  display: none;
+}
 
 .talim {
   background-image: url(data/img/advantage-bg.png);
@@ -2545,6 +2589,33 @@ p {
   margin-right: 22px;
   padding: 10px 0;
   color: black;
+}
+
+.vedio-section {
+  padding: 80px 0;
+}
+.vedio-section .vedio__item-card-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+.vedio-section .vedio__item-card-top > a {
+  display: block;
+  width: 32%;
+}
+.vedio-section .vedio__item-card-top .box {
+  position: relative;
+}
+.vedio-section .vedio__item-card-top .box-img {
+  position: relative;
+  background-color: #82CD47;
+}
+.vedio-section .vedio__item-card-top .box-youtube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
 }
 
 @media only screen and (max-width: 590px) {

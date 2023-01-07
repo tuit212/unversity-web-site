@@ -2686,10 +2686,67 @@ p {
     .vedio{
         width: 100%;
 
-        // &__list{
+        &__item-card-top{
+            display: flex;
+            align-items: center;
+        }
 
-            
-        // }
+        .higher{
+
+            &__item{
+                width: 31%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: 0.3s;
+                overflow: hidden;
+                
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.197);
+                    box-shadow:none;
+                    position: relative;
+    
+                    .higher__item__text2{
+                        display: block;
+                        transform: scale(1.2);
+    
+                    }
+    
+    
+    
+                    .higher__item__img{
+                        transform: scale(1.2);
+                        
+                    }
+                   
+    
+    
+                }
+                &__img{
+                    width: 100%;
+                    transition: 0.4s;
+                }
+    
+                &__title{
+                    padding: 10px; 
+                    color: #e1e1e1;
+                }
+    
+                &__text{
+                    color: #e1f1ff;
+                    padding: 0 10px 10px 10px;
+                }
+                &__text2{
+                    position: absolute;
+                    top: 38%;
+                    right: 0;
+                    color: black;
+                    font-weight: 700;
+                    padding: 4px 20px;
+                    background-color: yellow;;
+                    display: none;
+                }
+    
+            }
+        }
     }
 }
 
@@ -2886,6 +2943,51 @@ p {
     
     }
 
+
+    // vedio section
+
+    .vedio-section{
+        padding: 80px 0;
+
+        .vedio{
+
+            &__item{
+
+                &-card {
+
+                    &-top{
+                        display: flex;
+                        align-items: center;
+                        // justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 21px;
+
+                        & > a {
+                            display: block;
+                            width: 32%;
+                        }
+
+
+                        .box{
+                            position: relative;
+                            
+                            &-img{
+                                position: relative;
+                                background-color: #82CD47;
+                            }
+
+                            &-youtube{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
