@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!-- fonds icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="data/css/animate.css" media="all" />
@@ -69,23 +71,19 @@
                     <a href="talim.html" class="navigation_link">Ta'lim</a>
                 </li>
                 <li class="navigation_items">
-                    <a href="login.html" class="navigation_link">Login</a>
+                    <span class="login-btn">
+                        login
+                    </span>
                 </li>
                 <li class="navigation_items">
                     <span  class="navigation_link lang_link">
                         UZ <span>&#9660;</span>
                     </span>
                     <div class="navigation_dropdown lang_dropdown">
-                        <ul>
-                            <li>
-                                <a href="">UZ</a>
-                            </li>
-                            <li>
-                                <a href="">EN</a>
-                            </li>
-                            <li>
-                                <a href="">RU</a>
-                            </li>
+                        <ul class="langWrap">
+                            <a href="#" language="O'zbek" class="langActive">UZ</a>
+                            <a href="#" language="english">EN</a>
+                            <a href="#" language="russin">RU</a>
                         </ul>
                     </div>
                 </li>
@@ -373,7 +371,6 @@
 
     </div>
 
-    <input type="file"  placeholder="filini tanlang" id="file"></input>
 
 
 
@@ -386,10 +383,19 @@
     <script src="data/js/index.js"></script>
     <script src="./data/js/markaz/newArr.js"></script>
     <script src="./data/js/markaz/markaz_item.js"></script>
+    <script src="./data/js/login.js"></script>
 
     <script>
-        var file = document.getElementById('file').files[0];
-        if(file);
+        let loginBtn = document.querySelector(".login-btn");
+
+        loginBtn.addEventListener("click", (e) => {
+
+            e.preventDefault();
+
+
+            window.location.href = "login.html";
+
+        })
     </script>
 
 </body>

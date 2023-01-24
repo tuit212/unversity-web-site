@@ -34,7 +34,7 @@ p {
   line-height: 150%;
 }
 
-.one-section .login__btn::before, .work_navi a, .projects_img::before, .projects_img img, .projects_img, .team_items img, .social_icons li, .footer_links a, .news_image img, .services_block_in a h4, .services_block_in a::before, .services_block_in a, .advantage__link > a::before, .advantage__link > a, .active-btn::before, .active-btn, .mobile_menu, .showOverlay, .navigation .lang_link span, .navigation .lang_dropdown button, .navigation_dropdown li a, .navigation_dropdown li, .navigation_dropdown, .navigation_items::before, .navigation {
+.one-section .login__btn::before, .work_navi a, .projects_img::before, .projects_img img, .projects_img, .team_items img, .social_icons li, .footer_links a, .news_image img, .services_block_in a h4, .services_block_in a::before, .services_block_in a, .advantage__link > a::before, .advantage__link > a, .active-btn::before, .active-btn, .mobile_menu, .showOverlay, .navigation .lang_link span, .navigation .lang_dropdown-white a, .navigation .lang_dropdown a, .navigation_dropdown li a, .navigation_dropdown li, .navigation_dropdown, .navigation_items::before, .navigation {
   transition: all 0.3s linear;
 }
 
@@ -119,13 +119,29 @@ p {
 .navigation .lang_dropdown {
   width: 40px;
 }
-.navigation .lang_dropdown button {
+.navigation .lang_dropdown a {
   border: none;
   outline: none;
   background: none;
   color: #999;
+  margin-bottom: 2px;
+  padding: 3px 0;
 }
-.navigation .lang_dropdown button:hover {
+.navigation .lang_dropdown a:hover {
+  background-color: #313131;
+  color: #fff;
+}
+.navigation .lang_dropdown-white {
+  width: 100px;
+}
+.navigation .lang_dropdown-white a {
+  border: none;
+  outline: none;
+  background: none;
+  display: inline-block;
+  color: #999;
+}
+.navigation .lang_dropdown-white a:hover {
   color: #fff;
 }
 .navigation .lang_link {
@@ -2616,6 +2632,327 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) !important;
+}
+
+.singup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/advantage-bg.png) #278ce1;
+}
+
+.login-section {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  padding: 20px 30px 120px;
+  background: #4070f4;
+  background: #278ce1;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.login {
+  background: #fff;
+  position: absolute;
+  width: calc(100% + 220px);
+  padding: 20px 140px;
+  border-radius: 50%;
+  bottom: -86%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease;
+}
+
+.active-login .login {
+  bottom: -15%;
+  border-radius: 35%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form header {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login header {
+  color: #333;
+  opacity: 0.6;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.active-login .login header {
+  opacity: 1;
+}
+
+.active-login .singin header {
+  opacity: 0.6;
+}
+
+form input {
+  height: 60px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  border-radius: 8px;
+}
+
+.login form input {
+  border: 1px solid #aaa;
+}
+
+.login form input:focus {
+  box-shadow: 0 1px 0 #ddd;
+}
+
+form input[type=submit] {
+  margin-top: 15px;
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login form input[type=submit] {
+  background: #4070f4;
+  color: #fff;
+  border: none;
+}
+
+.img_profil {
+  width: 20px;
+  height: 20px;
+}
+.img_profil > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.modal-card {
+  position: absolute;
+  top: 500px;
+  z-index: 100;
+  transition: all 0.5s;
+  transform-origin: top bottom;
+  transform: scale(0);
+}
+.modal-card > .vedio__create-list {
+  padding: 50px;
+  width: 500px;
+  margin-left: 500px;
+  background-color: #adadad;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profil__video-edit > div > label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+.profil__video-edit > div > input {
+  display: block;
+  width: 70%;
+  margin-top: 5px;
+  border-radius: 2px;
+  padding: 8px 10px;
+  border: none;
+  border: 1px solid #999;
+}
+.profil__video-edit .video__card-add {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid #999;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.profil__video-edit .video__card-add:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.profil-section {
+  padding: 100px 0;
+  background-color: #278ce1;
+}
+.profil-section .profil .plus__edit {
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  margin: 50px 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profil-section .profil__top {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profil-section .profil__top-img {
+  width: 200px;
+  height: 200px;
+  padding: 10px 0 0 60px;
+}
+.profil-section .profil__top-img > img {
+  border-radius: 50%;
+  width: 100%;
+}
+.profil-section .profil__top-content {
+  margin-left: 100px;
+  width: 50%;
+}
+.profil-section .profil__top-content > h3 {
+  color: #faeeee;
+}
+.profil-section .profil__top-content > p {
+  color: #d3cccc;
+}
+.profil-section .profil__top-chanchel {
+  width: 30%;
+  padding-left: 100px;
+}
+.profil-section .profil__top-chanchel > button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.4s;
+}
+.profil-section .profil__top-chanchel > button:hover {
+  background-color: #fff;
+  color: #313131;
+  border: 1px solid transparent;
+}
+.profil-section .profil__body {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.profil-section .profil__body-edit {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d3cccc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.profil-section .profil__body-edit > .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  color: #2f2f2f;
+}
+.profil-section .profil .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  display: inline-block;
+  margin-top: 20px;
+}
+.profil-section .profil .vedio__item-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 45px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.profil-section .profil .profile-video {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 31%;
+}
+.profil-section .profil .profile-video > li {
+  width: 100%;
+  height: 400px;
+  background-color: #ccc;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.4s;
+  position: relative;
+}
+.profil-section .profil .profile-video > li > .card__box {
+  position: absolute;
+  bottom: 5px;
+}
+.profil-section .profil .profile-video > li > .card__box .video__card-edit {
+  border: none;
+  margin-left: 20px;
+  background-color: rgb(22, 79, 204);
+  border: 1px solid #3271a5;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.profil-section .profil .profile-video > li > .card__box .video__card-uchir {
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(224, 24, 24);
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.profil-section .profil .profile-video > li > .card__box .video__card-save {
+  border: none;
+  background-color: rgb(193, 234, 14);
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.profil-section .profil .profile-video > li:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profil-section .profil .profile-video > li > .vedio-top {
+  width: 100%;
+}
+.profil-section .profil .profile-video > li > .vedio-top > iframe {
+  width: 100%;
+  height: 200px;
+}
+.profil-section .profil .profile-video > li .vedio-body {
+  padding: 30px;
+}
+.profil-section .profil .profile-video > li .vedio-body > h3 {
+  font-size: 18px;
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.profil-section .profil .profile-video > li .vedio-body > p {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 590px) {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,330 +13,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!-- fonds icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="data/css/animate.css" media="all" />
     <link rel="stylesheet" href="data/css/swiper.min.css">
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="data/css/style.css">
 </head>
 <body>
 
-    <div class="wrapper">
-
-        <!-- header end -->
-
-        <!-- navbar start -->
-
-        <nav class="navigation">
-            <a href="index.html" class="navigation_logo"><img src="data/img/logo-full.png" alt="logo"></a>
-            <button class="menu_btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="navigation_list">
-                <li class="navigation_items">
-                    <a href="about.html" class="navigation_link">
-                        Universitet haqida
-                    </a>
-                    <div class="navigation_dropdown">
-                        <ul>
-                            <li>
-                                <a href="kafedra.html">Kafedra</a>
-                            </li>
-                            <li>
-                                <a href="markaz.html" >Markaz va bo'limlar</a>
-                            </li>
-                            <li>
-                                <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="navigation_items">
-                    <a href="news.html" class="navigation_link" target="_blank">
-                        Yangiliklar
-                    </a>
-                </li>
-                <li class="navigation_items">
-                    <a href="vedio.html" class="navigation_link">
-                        vedio
-                    </a>
-                </li>
-                <li class="navigation_items">
-                    <a href="contacts.html" class="navigation_link">Bog'lanish</a>
-                </li>
-                <li class="navigation_items">
-                    <a href="talim.html" class="navigation_link">Ta'lim</a>
-                </li>
-                <li class="navigation_items">
-                    <a href="login.html" class="navigation_link">Login</a>
-                </li>
-                <li class="navigation_items">
-                    <span href="" class="navigation_link lang_link">
-                        UZ <span>&#9660;</span>
-                    </span>
-                    <div class="navigation_dropdown lang_dropdown">
-                        <ul>
-                            <li>
-                                <a href="">UZ</a>
-                            </li>
-                            <li>
-                                <a href="">EN</a>
-                            </li>
-                            <li>
-                                <a href="">RU</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        
-        <!-- responsive mobile menu -->
-        <div class="mobile_menu">
-            <ul class="link_list">
-                <li>
-                    <a href="#demo" data-toggle="collapse">Universitet haqida</a>
-                    <!-- <div id="demo" class="collapse">
-                        <div class="collapse_list">
-                            <a href="kafedra.html">Kafedra</a>
-                            <a href="markaz.html">Markaz va bo'limlar</a>
-                            <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
-                        </div>
-                    </div> -->
-                </li>
-                <li>
-                    <a href="kafedra.html">Kafedra</a>
-                </li>
-                <li>
-                    <a href="markaz.html">Markaz va bo'limlar</a>
-                </li>
-                <li>
-                    <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
-                </li>
-                <li>
-                    <a href="news.html" target="_blank">
-                        Yangiliklar
-                    </a>
-                </li>
-                <li>
-                    <a href="vedio.html" class="navigation_link">
-                        vedio
-                    </a>
-                </li>
-                <li>
-                    <a href="contacts.html" class="navigation_link">Bog'lanish</a>
-                </li>
-                <li>
-                    <a href="talim.html" class="navigation_link">Ta'lim</a>
-                </li>
-                <li>
-                    <a href="login.html" class="navigation__link">Login</a>
-                </li>
-            </ul>
-            <p>Til tanlash:</p>
-            <ul class="lang_list">
-                <li><a href="#link" class="active">Uz</a></li>
-                <li><a href="#link" >Ru</a></li>
-                <li><a href="#link">En</a></li>
-            </ul>
-            <ul class="social_icons">
-                <li>
-                    <a href="https://www.facebook.com/nizomiy.tdpu/" target="_blank">
-                        <img src="data/img/facebook-w.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/Nizomiy1" target="_blank">
-                        <img src="data/img/telegram-w.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/nizomiy.tdpu/" target="_blank">
-                        <img src="data/img/instagram-w.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.whatsapp.com/nizomiy.tdpu/" target="_blank">
-                        <img src="data/img/whatsapp-w.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <header class="header_promo other_pages_header">
-            <div class="header_promo_background" style="background-image: url(data/img/promo.jpg)"></div>
-            <div class="video_overlay"></div>
-            <div class="header_promo_video">
-                <video autoplay loop muted playsinline webkit-playsinline poster="#" preload="none"
-                    src="data/promo/promo_header.mp4"></video>
+    <main class="singup">
+        <section class="login-section">
+            <div class="form singin">
+                <header class="header">Singup</header>
+                <form action="">
+                    <input type="text" placeholder="To'liq ism sharf" required>
+                    <input type="email" placeholder="email kiriting" required>
+                    <input type="password" placeholder="parol kiriting" required>
+                    <input type="submit" value="Singup">
+                </form>
             </div>
-            <div class="header_promo_title">
-                <h1><span>Login</span></h1>
-                <ul class="header_promo_breadcrumbs">
-                    <li>
-                        <a href="index.html">Bosh sahifa</a>
-                    </li>
-                    <!-- <li>
-                        <span>
-                            НОВОСТИ
-                        </span>
-                    </li> -->
-                </ul>
+
+            <div class="login form">
+                <header class="header">Login</header>
+                <form action="">
+                    <input type="email" placeholder="email kiriting" required>
+                    <input type="password" placeholder="parol kiriting" required>
+                    <input type="submit" value="Login">
+                </form>
             </div>
-        </header>
-
-        <!-- header end -->
-
-        <!-- main start -->
-
-        <div class="page">
-            <section class="one-section">
-                <div class="container">
-                    <div class="login">
-                        <form class="form" action="">
-                            <div class="login__car">
-                                <i class="fa fa-user login__car__user"></i>
-                                <p class="login__car__text">Create Accaund</p>
-                            </div>
-                            <div class="login__cardd">
-                                <label for="fullName" class="login__label">Full name</label>
-                            <input type="text" placeholder="full name" 
-                            id="fullName" name="fullName" class="login__user">
-                            </div>
-                            <div class="login__cardd">
-                                <label for="password" class="login__label">Password</label> <br>
-                            <input type="password" value="" class="login__password" placeholder="password" name="password" id="password"><br>
-                            </div>
-                            <div class="login__cardd">
-                                <label for="password" class="login__label">Confim password</label><br>
-                                <input type="text" class="login__confim" placeholder="Confim password" name="password" id="password">
-                            </div>
-                            <button type="submit" class="login__btn">
-                                Next Step
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- main end -->
-
-        <!-- footer start -->
-
-        <div class="footer">
-            <div class="footer_inner">
-                <div class="container">
-                    <div class="row footer_top">
-                        <div class="col-md-3">
-                            <div class="footer_items">
-                                <div class="footer_title">
-                                    Universitet haqida
-                                </div>
-                                <div class="footer_content">
-                                    <p>
-                                        TDPU - Nizomiy nomidagi Toshkent davlat pedagogika universiteti.
-                                    </p>
-                                    <ul class="social_icons">
-                                        <li><a href="https://www.facebook.com/nizomiy.tdpu/" target="_blank"><img src="data/img/facebook-w.svg" alt=""></a></li>
-                                        <li><a href="https://t.me/Nizomiy1" target="_blank"><img src="data/img/telegram-w.svg" alt=""></a></li>
-                                        <li><a href="https://www.instagram.com/nizomiy.tdpu/" target="_blank"><img src="data/img/instagram-w.svg" alt=""></a></li>
-                                        <li><a href="https://www.whatsapp.com/nizomiy.tdpu/" target="_blank"><img src="data/img/whatsapp-w.svg" alt=""></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_items">
-                                <div class="footer_items">
-                                    <div class="footer_title">
-                                        Ma'lumotlar
-                                    </div>
-                                </div>
-                                <div class="footer_content">
-                                    <ul class="footer_links">
-                                        <li>
-                                            <a href="" >
-                                                Bog'lanish
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" >Vakansiya</a>
-                                        </li>
-                                        <li>
-                                            <a href="news.html" target="_blank">
-                                                Yangiliklar
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_items">
-                                <div class="footer_items">
-                                    <div class="footer_title">
-                                        Foydali ma'lumotlar
-                                    </div>
-                                </div>
-                                <div class="footer_content">
-                                    <ul class="footer_links">
-                                        <li>
-                                            <a href="about.html" >
-                                                Universitet haqida
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="markaz.html" >Markaz va bo'limlar</a>
-                                        </li>
-                                        <li>
-                                            <a href="kafedra.html">Kafedra</a>
-                                        </li>
-                                        <li>
-                                            <a href="fakultetlar.html" target="_blank">Fakultetlar</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_items">
-                                <div class="footer_items">
-                                    <div class="footer_title">
-                                        Контактные данные
-                                    </div>
-                                </div>
-                                <ul class="footer_contacts">
-                                    <li><a href="">г. Ташкент, ул. Катта-Хирмонтепа, 1</a></li>
-                                    <li><span>info@tdpu.uz</span></li>
-                                    <li>
-                                        <a href="tel:+998712024421">+998 71 202 44 21</a>
-                                    </li>
-                                    <li>
-                                        <span>Du. - Shan.: 9:00 до 19:00</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+    </main>
 
 
-        <!-- footer end -->
-    </div>
-    
-
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="data/js/viewportchecker.js"></script>
-    <script type="text/javascript" src="data/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="data/js/index.js"></script>
     <script src="./data/js/login.js"></script>
 </body>
 </html>
