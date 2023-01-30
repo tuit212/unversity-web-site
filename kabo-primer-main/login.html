@@ -11,14 +11,14 @@
 
 
     <div class="wrappers-loogin">
-        <div class="container right-panel-active">
+        <div class="wrappers__login right-panel-active">
             <!-- Sign Up -->
             <div class="container__form container--signup">
                  <form action="#" class="form" id="form1">
                       <h2 class="form__title">Sign Up</h2>
                       <input type="text" placeholder="ism" id="inputName" class="input" />
                       <input type="text" placeholder="familiya" id="inputFamiliya" class="input" />
-                      <input required type="email" placeholder="Email" id="inputEmail" class="input" />
+                      <input required type="email" placeholder="asdfghjkl@gmail.com" id="inputEmail" class="input" />
                       <input type="password" placeholder="Password" id="inputPassword" class="input" />
                       <input type="password" placeholder="repeat password" id="inputTruePassword" class="input" />
                       <button type="submit" id="singUp" class="btn">Sign Up</button>
@@ -29,10 +29,10 @@
             <div class="container__form container--signin">
                  <form action="#" class="form" id="form2">
                       <h2 class="form__title">Sign In</h2>
-                      <input type="email" placeholder="Email" class="input" />
-                      <input type="password" placeholder="Password" class="input" />
+                      <input type="email" id="loginEmail" placeholder="Email" class="input" />
+                      <input type="password" id="loginPassword" placeholder="Password" class="input" />
                       <a href="#" class="link">Forgot your password?</a>
-                      <button class="btn">Sign In</button>
+                      <button id="login" class="btn">Sign In</button>
                  </form>
             </div>
        
@@ -49,38 +49,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <!-- <div class="singup">
-        <div class="login-section">
-            <div class="cheked">
-                <h1 id="title">Sign Up</h1>
-                <div class="input-gruop">
-                    <div class="input-field" id="nameField">
-                        <input id="name" type="text" placeholder="To'liq ism sharif"  class="userName">
-                    </div>
-                    <div class="input-field" id="nameField">
-                        <input id="" type="email" placeholder="emailingizni kiring"  class="email">
-                    </div>
-                    <div class="input-field passswordNone">
-                        <input id="password" type="password" placeholder="password" class="password" >
-                    </div>
-                    <div class="input-field passswordNone">
-                        <input id="password"  type="password" placeholder="tray agin password" class="treypassword" >
-                    </div>
-                </div>
-                <div class="btn-div">
-                    <button id="signupBtn" type="submit" onclick="signUp()">Sign Up</button>
-                    <button  id="signinBtn" onclick="login ()" >Sign In</button>
-                </div>
-            </div>
-        </div>
-        
-    </div> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

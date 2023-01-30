@@ -3,7 +3,7 @@ const signInBtn = document.getElementById("signIn");
 const signUpBtn = document.getElementById("signUp");
 const fistForm = document.getElementById("form1");
 const secondForm = document.getElementById("form2");
-const container = document.querySelector(".container");
+const container = document.querySelector(".wrappers__login");
 
 signInBtn.addEventListener("click", () => {
 	container.classList.remove("right-panel-active");
@@ -20,14 +20,16 @@ secondForm.addEventListener("submit", (e) => e.preventDefault());
 
 const loginArr = []
 
+
 const  singUp = document.getElementById("singUp");
 
-singUp.addEventListener("submit", (e) => {
+singUp.addEventListener("click", (e) => {
     e.preventDefault();
 
     signUp();
 
 }); 
+
 
 
 function signUp(){
@@ -55,98 +57,55 @@ function signUp(){
     const dataBase = singUpObj
 
     console.log(dataBase);
+
+    if(singUpObj.password === singUpObj.truePassword && singUpObj.password.length > 6){
+        loginArr.push(singUpObj)
+        alert('siz muvvaqiyatli kirding')
+        container.classList.remove("right-panel-active");
+    }  
+    else {
+        alert('parolingni uzinligi 6 ta dan kup buliwi kerak yoki parolni tug\'ri kiriting')
+    }
+    console.log(loginArr);
+}
+
+
+const login = document.getElementById('login');
+
+login.addEventListener('click', (e) => {
+     e.preventDefault();
+     
+     console.log("as");
+
+     loginNewArr();
+});
+
+function loginNewArr(){
+
+    const loginEmail = document.getElementById('loginEmail');
+    const loginPassword = document.getElementById('loginPassword');
+
+    const loginEmailValue = loginEmail.value;
+    const loginPasswordValue = loginPassword.value;
+
+    let loginObject = {
+        loginEmaill: loginEmailValue,
+        loginPasswordd: loginPasswordValue,
+    }
+
+    for (let i = 0 ; i < loginArr.length; i++) {
+
+        if (loginArr[i].email === loginObject.loginEmaill && loginArr[i].password === loginObject.loginPasswordd) {
+            window.location.href = "profil.html"
+        }else if(loginObject.loginEmaill === "" && loginObject.loginPasswordd === ""){
+            container.classList.add("right-panel-active");
+            alert("Please enter");
+        } else {
+            alert("password yoki email tekshiring ....");
+        }
+    }
 }
 
 
 
 
-
-//     let signIn = document.getElementById(`signinBtn`);
-//     // signIn.style.display="none";
-
-//     function signUp (){
-//     let title = document.querySelector("#title");
-//     let signUp = document.querySelector("#signupBtn");
-//     let signIn = document.querySelector("#signinBtn");
-//     let userName = document.querySelector(".userName");
-//     let password = document.querySelector(".password");
-//     let email = document.querySelector(".email");
-//     let passswordNone = document.querySelector(".passswordNone");
-//     let treyPassword = document.querySelector(".treypassword");
-    
-   
-//     let user = userName.value;
-//     let emal = email.value;
-//     let pass = password.value;
-//     let treyPass = treyPassword.value;
-    
-   
-//     let  loginObj = {
-//         name:user,
-//         emaill:emal,
-//         password:pass,
-//         treyPassword:treyPass,
-//     }
-
-
-
-//         if(loginObj.name && loginObj.emaill && loginObj.password && loginObj.treyPassword) {
-
-
-//             const isPassTrue = loginObj.treyPassword === loginObj.password 
-
-
-//             if(isPassTrue) {
-//                 loginArr.push(loginObj)
-//                 alert("Siz muvaffaqiyatli tizimga kirdingiz")
-//                 title.textContent = 'Login';
-//                 signUp.style.display = 'none';
-//                 signIn.style.display= "block";
-//                 treyPassword.style.display = 'none';
-//                 passswordNone.style.display = 'none';
-//             }else{
-//                 alert("email yoki parolni tekshiring... ")
-//             }
-
-        
-//         }else{
-//             alert("to'diring ....")
-//         }
-    
-    
-
-    
-//     console.log(loginArr);
-    
-
-// };
-
-
-
-
-// function login () {
-
-//     let users = document.querySelector('.userName');
-//     let psw = document.querySelector('.password');
-//     // console.log(users);
-
-
-//     const sign = {
-//         name:users.value,
-//         password:psw.value,
-//     }
-//     console.log(sign); 
-
-//   for(let i = 0; i < loginArr.length; i++){
-
-      
-//       if(loginArr[0].name != sign.name || loginArr[0].password != sign.password){
-//         alert(`tekshering tekshiring`)
-//       }else{
-//         alert(`Websaytga xush kelibsiz`)
-
-//         window.location.href = "index.html"
-//       }
-
-//     }
-// }

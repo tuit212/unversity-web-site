@@ -2675,7 +2675,7 @@ p {
   text-decoration: none;
 }
 
-.container {
+.wrappers__login {
   background-color: var(--white);
   border-radius: var(--button-radius);
   box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
@@ -2699,7 +2699,7 @@ p {
   z-index: 2;
 }
 
-.container.right-panel-active .container--signin {
+.wrappers__login.right-panel-active .container--signin {
   transform: translateX(100%);
 }
 
@@ -2710,7 +2710,7 @@ p {
   z-index: 1;
 }
 
-.container.right-panel-active .container--signup {
+.wrappers__login.right-panel-active .container--signup {
   -webkit-animation: show 0.6s;
           animation: show 0.6s;
   opacity: 1;
@@ -2729,7 +2729,7 @@ p {
   z-index: 100;
 }
 
-.container.right-panel-active .container__overlay {
+.wrappers__login.right-panel-active .container__overlay {
   transform: translateX(-100%);
 }
 
@@ -2748,7 +2748,7 @@ p {
   width: 200%;
 }
 
-.container.right-panel-active .overlay {
+.wrappers__login.right-panel-active .overlay {
   transform: translateX(50%);
 }
 
@@ -2770,7 +2770,7 @@ p {
   transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay--left {
+.wrappers__login.right-panel-active .overlay--left {
   transform: translateX(0);
 }
 
@@ -2779,7 +2779,7 @@ p {
   transform: translateX(0);
 }
 
-.container.right-panel-active .overlay--right {
+.wrappers__login.right-panel-active .overlay--right {
   transform: translateX(20%);
 }
 
