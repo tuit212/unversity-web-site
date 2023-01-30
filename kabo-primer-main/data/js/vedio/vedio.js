@@ -149,7 +149,9 @@ function editCards(){
 // edit video cards end
 // edit video cards start
 
-function deleteCards(id){
+function deleteCards(a){
+
+
 
     // e.preventDefault();
 
@@ -168,13 +170,18 @@ function deleteCards(id){
 
     
     const deletedTodo = videoArrays.findIndex(todo => {
-        todo.id == !id
+        return todo.id !== a.id;
         
 
         
     })  
     
-    console.log(id);
+    // console.log(id);
+
+    videoArrays = deletedTodo
+    console.log(videoArrays);
+    
+    getVideo(videoArrays)
 
 
 
