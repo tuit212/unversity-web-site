@@ -1,13 +1,23 @@
 
+
+
+
 let profil__top = document.querySelector(".profil__top");
+
+const pofilLocatName = localStorage.getItem('loginName')
+const pofilLocatFullName = localStorage.getItem('loginFullName')
+const pofilLocatEmail = localStorage.getItem('loginEmail')
+
+
 
 
 
 let dataBase = [
     {
-        "img": "./data/img/accound.jpg",
-        "name": "asadbek anvarov",
-        "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At aliquid quo, quis laboriosam nemo alias necessitatibus porro maiores atque iste?",
+        "img": "./data/img/profil accound/accound.svg",
+        "name": pofilLocatName,
+        "lastName": pofilLocatFullName,
+        "email": pofilLocatEmail,
     },
 ]
 
@@ -26,15 +36,16 @@ function dataBaseHtml() {
         </div>
         <div class="profil__top-content">
             <h3>
-                ${dataBase[i].name}
+                ${dataBase[i].name}  ${dataBase[i].lastName}
             </h3>
             <p>
-                ${dataBase[i].description}
+                ${dataBase[i].email}
             </p>
         </div>
         <div class="profil__top-chanchel">
-            <button title="Tahrirlash">Edit</button>
-            <button title="Saqlash">Save</button>
+            <button type="button" data-bs-toggle="modal"               data-bs-target="#exampleModal">
+               edit
+            </button>
         </div>
         `
     }
@@ -44,6 +55,65 @@ function dataBaseHtml() {
 dataBaseHtml();
 
 
+
+
+function dataBaseEdit(){
+
+}
+
+const edit__modal = document.querySelector('.edit-modal');
+
+function dataBaseEditModal(){
+
+    let editModalGroup = "";
+
+    for (let i = 0; i < dataBase.length; i++) {
+
+
+        editModalGroup = `
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <form >
+                        <label for="">
+                            Ismingiz <input type="text" value="${dataBase[i].name}">
+                        </label>
+                        <label for="">
+                            familangiz <input type="text" value="${dataBase[i].lastName}">
+                        </label>
+                        <label for="">
+                            emailingiz <input type="email" name="" id="" 
+                            value="${dataBase[i].email}">
+                        </label>
+                        <label for="">
+                            uziz haqiqiz ma'lumot 
+                            <textarea name="" id="" cols="30" rows="3">
+                                
+                            </textarea>
+                        </label>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="dataBaseSave" data-bs-dismiss="modal">Save changes</button>
+                </div>
+                </div>
+            </div>
+        `
+    }
+
+
+
+    edit__modal.innerHTML = editModalGroup
+}
+
+dataBaseEditModal();
+
+
+
+let dataBaseSave = {
+    name: 'dataBaseSave',
+}
 
 
 

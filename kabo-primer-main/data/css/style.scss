@@ -3545,7 +3545,7 @@ p {
         .profil{
 
             .plus__edit{
-                background-color: transparent;
+                background-color: #278CE1;
                 border: none;
                 width: 100px;
                 height: 100px;
@@ -3553,6 +3553,17 @@ p {
                 margin: 50px 0;
                 border-radius: 50%;
                 cursor: pointer;
+                margin-top: 20px;
+            }
+
+            .profil__edit-title{
+                display: block;
+                margin-top: 50px;
+                color: #fff;
+                font-size: 17px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                
             }
 
             &__top{
@@ -3565,8 +3576,8 @@ p {
                 
 
                 &-img{
-                    width: 200px;
-                    height: 200px;
+                    width: 150px;
+                    height: 150px;
                     padding: 10px 0 0 60px;
                     
                     & > img {

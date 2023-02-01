@@ -70,9 +70,6 @@
                     <a href="talim.html" class="navigation_link">Ta'lim</a>
                 </li>
                 <li class="navigation_items">
-                    <a href="login.html" class="navigation_link">Login</a>
-                </li>
-                <li class="navigation_items">
                     <span  class="navigation_link lang_link">
                         UZ <span>&#9660;</span>
                     </span>
@@ -84,11 +81,8 @@
                         </ul>
                     </div>
                 </li>
-                <li class="navigation_items">
-                    <!-- <i class="fa fa-user profil"></i> -->
-                    <div class="img_profil profil">
-                        <img src="./data/img/accound.jpg" alt="accoung">
-                    </div>
+                <li class="navigation_items" title="login out">
+                    <a href="index.html" class="navigation_link">Login out</a>
                 </li>
             </ul>
         </nav>
@@ -191,10 +185,9 @@
             <section class="profil-section">
                 <div class="container">
                     <div class="profil">
-                        <div class="profil__top">
-                            <!-- <img src="./data/img/accound.jpg" alt="" width="15" height="15"> -->
-                        </div>
-                        <button type="button" class="btn btn-primary plus__edit"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="profil__top"></div>
+                        <span class="profil__edit-title">Vedio qo'shish</span>
+                        <button type="button" class=" plus__edit"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <i class="fa fa-plus plus"></i>
                         </button>
                         <span class="line"></span>
@@ -350,6 +343,18 @@
             </div>
             </div>
         </div>
+    </div>
+
+
+
+
+    <!-- modal edit -->
+    <div 
+        class="modal fade edit-modal" 
+        id="exampleModal" 
+        tabindex="-1"           
+        aria-labelledby="exampleModalLabel" 
+        aria-hidden="true">
     </div>
 
 

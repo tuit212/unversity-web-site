@@ -18,7 +18,10 @@ secondForm.addEventListener("submit", (e) => e.preventDefault());
 
 
 
-const loginArr = []
+let  loginArr = [];
+
+// localStorage.setItem("loginArr", loginArr.name)
+
 
 
 const  singUp = document.getElementById("singUp");
@@ -54,11 +57,15 @@ function signUp(){
         truePassword: userTruePassword,
     };
 
+    
+
+    
+
     const dataBase = singUpObj
 
     console.log(dataBase);
 
-    if(singUpObj.password === singUpObj.truePassword && singUpObj.password.length > 6){
+    if(singUpObj.password === singUpObj.truePassword && singUpObj.password.length > 2){
         loginArr.push(singUpObj)
         alert('siz muvvaqiyatli kirding')
         container.classList.remove("right-panel-active");
@@ -67,6 +74,12 @@ function signUp(){
         alert('parolingni uzinligi 6 ta dan kup buliwi kerak yoki parolni tug\'ri kiriting')
     }
     console.log(loginArr);
+
+    localStorage.setItem("loginName", singUpObj.name);
+    localStorage.setItem("loginFullName", singUpObj.fullName);
+    localStorage.setItem("loginEmail", singUpObj.email);
+    localStorage.setItem("loginPassword", singUpObj.password);
+
 }
 
 
@@ -93,9 +106,12 @@ function loginNewArr(){
         loginPasswordd: loginPasswordValue,
     }
 
+    const locEmail = localStorage.getItem('loginEmail')
+    const locPassword = localStorage.getItem('loginPassword')
+
     for (let i = 0 ; i < loginArr.length; i++) {
 
-        if (loginArr[i].email === loginObject.loginEmaill && loginArr[i].password === loginObject.loginPasswordd) {
+        if (locEmail === loginObject.loginEmaill && locPassword === loginObject.loginPasswordd) {
             window.location.href = "profil.html"
         }else if(loginObject.loginEmaill === "" && loginObject.loginPasswordd === ""){
             container.classList.add("right-panel-active");
@@ -104,6 +120,8 @@ function loginNewArr(){
             alert("password yoki email tekshiring ....");
         }
     }
+
+    
 }
 
 
