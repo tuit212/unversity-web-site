@@ -2954,6 +2954,31 @@ p {
   color: #555;
 }
 
+.modal__form {
+  padding: 20px 40px;
+}
+.modal__form > label {
+  color: #4e6dbb;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.modal__form > label > input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 3px 10px;
+  border: 1px solid #999;
+  outline: none;
+  box-shadow: 0 1px 1px transparent;
+}
+.modal__form > label > input:focus {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.modal__form > label > input:valid {
+  color: #008997;
+  font-size: 600;
+}
+
 .img_profil {
   width: 20px;
   height: 20px;

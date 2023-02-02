@@ -56,6 +56,7 @@ function signUp(){
         password: userPassword,
         truePassword: userTruePassword,
     };
+    
 
     
 
@@ -88,7 +89,6 @@ const login = document.getElementById('login');
 login.addEventListener('click', (e) => {
      e.preventDefault();
      
-     console.log("as");
 
      loginNewArr();
 });
@@ -106,20 +106,41 @@ function loginNewArr(){
         loginPasswordd: loginPasswordValue,
     }
 
+    localStorage.setItem("loginObjectEmail" , loginObject.loginEmaill);
+    localStorage.setItem("loginObjectPassordd" , loginObject.loginPasswordd);
+
+
+    const locGetEmail = localStorage.getItem('loginObjectEmail');
+    const locGetPassword = localStorage.getItem('loginObjectPassordd');
+
+
+    console.log(loginObject);
+
     const locEmail = localStorage.getItem('loginEmail')
     const locPassword = localStorage.getItem('loginPassword')
 
-    for (let i = 0 ; i < loginArr.length; i++) {
+    console.log(locEmail, loginObject.loginEmaill);
 
-        if (locEmail === loginObject.loginEmaill && locPassword === loginObject.loginPasswordd) {
-            window.location.href = "profil.html"
-        }else if(loginObject.loginEmaill === "" && loginObject.loginPasswordd === ""){
-            container.classList.add("right-panel-active");
-            alert("Please enter");
-        } else {
-            alert("password yoki email tekshiring ....");
-        }
+    if(locEmail === locGetEmail && locPassword === locGetPassword){
+        window.location.href = "profil.html"
+    }else if(locGetEmail === "" && locGetPassword === ""){
+        container.classList.add("right-panel-active");
+        alert("Please enter");
+    } else {
+        alert("password yoki email tekshiring ....");
     }
+
+    // for (let i = 0 ; i < loginArr.length; i++) {
+
+    //     if (locEmail == loginObject.loginEmaill && locPassword == loginObject.loginPasswordd) {
+    //         window.location.href = "profil.html"
+    //     }else if(loginObject.loginEmaill === "" && loginObject.loginPasswordd === ""){
+    //         container.classList.add("right-panel-active");
+    //         alert("Please enter");
+    //     } else {
+    //         alert("password yoki email tekshiring ....");
+    //     }
+    // }
 
     
 }

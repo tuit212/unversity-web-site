@@ -74,33 +74,34 @@ function dataBaseEditModal(){
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <form >
+                    <form class="modal__form">
                         <label for="">
-                            Ismingiz <input type="text" value="${dataBase[i].name}">
+                            Ismingiz <input type="text"  value="${dataBase[i].name}"
+                            id="formName" >
                         </label>
                         <label for="">
-                            familangiz <input type="text" value="${dataBase[i].lastName}">
-                        </label>
-                        <label for="">
-                            emailingiz <input type="email" name="" id="" 
-                            value="${dataBase[i].email}">
+                            familangiz <input type="text" value="${dataBase[i].lastName}" id="formFullName">
                         </label>
                         <label for="">
                             uziz haqiqiz ma'lumot 
-                            <textarea name="" id="" cols="30" rows="3">
-                                
-                            </textarea>
+                            <input type="text" value="salom" id="formTextContent">
+
+                            </input>
                         </label>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" data-bs-dismiss="modal">Close</button>
-                    <button type="button" id="dataBaseSave" data-bs-dismiss="modal">Save changes</button>
+                    <button type="button" id="dataBaseSave" data-bs-dismiss="modal" 
+                    onclick="editModalGroupValue()">
+                        Save changes
+                    </button>
                 </div>
                 </div>
             </div>
         `
     }
+ 
 
 
 
@@ -108,12 +109,41 @@ function dataBaseEditModal(){
 }
 
 dataBaseEditModal();
+// id="formTextContent"
 
 
 
-let dataBaseSave = {
-    name: 'dataBaseSave',
+// console.log(document.querySelector('#formName').defaultValue)
+
+function editModalGroupValue(){
+
+    let editGroupName = document.querySelector('#formName');
+    let editGroupFullName = document.querySelector('#formFullName');
+    let editGroupTextContent = document.querySelector('#formTextContentf');
+
+    // console.log(editGroupName, editGroupFullName);
+
+
+    let editGroupNameValue = editGroupName.value
+    let editGroupFullNameValue = editGroupFullName.value
+    let editGroupTextContentValue = editGroupTextContent.value
+
+    console.log(editGroupNameValue , editGroupFullNameValue );
+
+    let arrEditGroup = {
+        editName: editGroupNameValue,
+        editFullName : editGroupFullNameValue,
+        editTextContent: editGroupTextContentValue
+    }
+
+    // arrEdit editGroupData.push(arrEditGroup);
+
+    console.log(editGroupData.push(arrEditGroup));
+
+
 }
+
+
 
 
 
